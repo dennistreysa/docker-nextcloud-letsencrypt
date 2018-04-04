@@ -4,7 +4,7 @@
 
 **Note:** This is a fork of [evertramos/docker-nextcloud-letsencrypt](https://github.com/evertramos/docker-nextcloud-letsencrypt) but with PostgreSQL support instead of MySQL/MariaDb.
 
-This repo allows you to set up the great [Nextcloud](https://nextcloud.com) as a container over SSL auto generated and auto renewed by our Web Proxy.
+This repo allows you to set up the great [Nextcloud](https://nextcloud.com) as a container over SSL auto generated and auto renewed by [evertramos' Web Proxy](https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion).
 
 ![Nextcloud Environment](https://github.com/evertramos/images/raw/master/nextcloud.jpg)
 
