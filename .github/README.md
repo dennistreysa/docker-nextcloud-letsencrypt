@@ -1,8 +1,8 @@
 # Automated docker nextcloud for nginx proxy (webproxy) integrated with LetsEncrypt and PostgreSQL
 
-**Note: This project is not finished yet, please don't use it!** 
-
 **Note:** This is a fork of [evertramos/docker-nextcloud-letsencrypt](https://github.com/evertramos/docker-nextcloud-letsencrypt) but with PostgreSQL support instead of MySQL/MariaDb.
+
+**Note: This is just a Postgres adaption I made for myself that I made publically available, I give no warranty. Use at your own risk!** 
 
 This repo allows you to set up the great [Nextcloud](https://nextcloud.com) as a container over SSL auto generated and auto renewed by [evertramos' Web Proxy](https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion).
 
