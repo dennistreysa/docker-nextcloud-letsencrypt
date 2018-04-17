@@ -21,28 +21,26 @@ In order to use this compose file (docker-compose.yml) you must have:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/evertramos/docker-nextcloud-letsencrypt.git
+git clone https://github.com/dennistreysa/docker-nextcloud-letsencrypt-postgres.git
 ```
 
 2. Make a copy of our .env.sample and rename it to .env:
 
 Update this file with your preferences.
 
-```bash
+```ini
 #
-# Configuration for Nextcloud using NGINX WebProxy
+# Configuration for Nextcloud using NGINX WebProxy and PostgreSQL
 #
 
 # Containers name
 DB_CONTAINER_NAME=cloud-db
 APP_CONTAINER_NAME=cloud-app
 
-# Mysql settings
-MYSQL_HOST=cloud-db
-MYSQL_DATABASE=cloud_db
-MYSQL_ROOT_PASSWORD= cloud,root,password
-MYSQL_USER=cloud_user
-MYSQL_PASSWORD=cloud,user,password
+# Postgres settings
+POSTGRES_USER=nextcloud
+POSTGRES_DB=nextcloud
+POSTGRES_PASSWORD=postgres,password
 
 # Nextcloud settings
 NEXTCLOUD_ADMIN_USER=admin
@@ -65,8 +63,8 @@ LETSENCRYPT_EMAIL=your_email@yourdomain.com
 
 #
 # Network name
-# 
-# Your container app must use a network conencted to your webproxy 
+#
+# Your container app must use a network conencted to your webproxy
 # https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion
 #
 NETWORK=webproxy
